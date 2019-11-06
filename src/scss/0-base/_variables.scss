@@ -1,0 +1,26 @@
+// Colors
+$light-french-beige: #c1a97a;
+$outer-space: #464949;
+$onyx: #34393a;
+$white-smoke: #f5f5f5;
+
+$primary-color: $light-french-beige;
+$secondary-color: $outer-space;
+$dark-color: $onyx;
+$light-color: $white-smoke;
+
+$text-color: #444;
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+
+$font-stack: 'Montserrat', Verdana, sans-serif;
+$font-normal: 400;
+$font-semi-bold: 500;
+$line-height: 1.8;
+
+// Media Query Breakpoints
+$breakpoint-sm: 576px; // mobile (landscape) +
+$breakpoint-md: 768px; // tablet +
+$breakpoint-lg: 992px; // laptop +
+$breakpoint-xl: 1200px; // desktop +

@@ -1,0 +1,60 @@
+.navbar {
+  background-color: $white;
+  padding: 1rem;
+}
+
+.navbar-brand {
+  color: $primary-color;
+  font-size: 1rem;
+  font-weight: $font-semi-bold;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  margin-top: 0.5rem;
+  @include bp-lg {
+    margin-top: 0;
+  }
+}
+
+.nav-item {
+  margin: 0;
+  @include bp-lg {
+    margin-left: 1rem;
+  }
+}
+
+.nav-link {
+  border-bottom: 2px solid $white;
+  font-weight: $font-semi-bold;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.25rem;
+  @include bp-lg {
+    transition: border-bottom-color 0.2s ease, color 0.2s ease;
+    &:hover {
+      border-bottom-color: $primary-color;
+    }
+  }
+}
+
+.navbar-toggler {
+  width: 40px;
+  &:focus {
+    outline: 1px solid $primary-color;
+  }
+
+  span {
+    background-color: $secondary-color;
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 6px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

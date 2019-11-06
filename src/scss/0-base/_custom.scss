@@ -1,0 +1,49 @@
+// Color System
+$primary: $primary-color;
+$secondary: $secondary-color;
+$light: $light-color;
+$dark: $dark-color;
+
+// Options
+$enable-rounded: false;
+
+// Body
+$body-color: $text-color;
+
+// Links
+$link-color: $text-color;
+$link-hover-color: $primary-color;
+$link-hover-decoration: none;
+
+// Fonts
+$font-family-sans-serif: $font-stack;
+$font-weight-normal: $font-normal;
+$font-weight-bold: $font-semi-bold;
+$lead-font-weight: $font-weight-normal;
+$line-height-base: $line-height;
+
+$h1-font-size: 2rem;
+$h2-font-size: 1.75rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.25rem;
+$h5-font-size: 1rem;
+$h6-font-size: 0.75rem;
+
+// Buttons + Forms
+$input-btn-padding-y: 0.5rem;
+$input-btn-padding-x: 1rem;
+$input-btn-padding-y-sm: 0.5rem;
+$input-btn-padding-x-sm: 0.75rem;
+$input-btn-padding-y-lg: 0.5rem;
+$input-btn-padding-x-lg: 1.5rem;
+$btn-font-weight: $font-semi-bold;
+
+// Navbar
+$navbar-toggler-padding-y: 0.25rem;
+$navbar-toggler-padding-x: 0.25rem;
+
+// Cards
+$card-border-width: 0;
+
+// Import Bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap';
