@@ -1,0 +1,11 @@
+{
+  "name": "the-shoto-resort",
+  "version": "1.0.0",
+  "description": "Website for a beach resort.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Randy Pham",
+  "license": "ISC"
+}
