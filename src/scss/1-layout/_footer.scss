@@ -1,0 +1,32 @@
+.footer {
+  background-color: $light-color;
+  font-size: 0.875rem;
+  padding-top: 4rem;
+  @include bp-md {
+    padding-top: 6rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .row:last-child {
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .social-media {
+    a {
+      display: inline-block;
+      font-size: 1.25rem;
+      margin: 0 0.5rem 0 0;
+      @include bp-md {
+        margin: 0 0.5rem 0 0;
+      }
+    }
+  }
+}
