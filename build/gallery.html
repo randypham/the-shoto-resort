@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gallery | The Shoto Resort</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">The Shoto Resort</a>
+        <!-- Nav Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- Nav -->
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.html">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="amenities.html">Amenities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="explore.html">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1>Gallery</h1>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Gallery -->
+      <section class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/resort-building.jpg" alt="Resort Building" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/beach.jpg" alt="Akane Beach" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/beach-view.jpg" alt="Beach View" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/beach-kayak.jpg" alt="Kayaking Area" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/pool-1.jpg" alt="Swimming Pool" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/beach-sunrise.jpg" alt="Beach Sunrise" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/gym.jpg" alt="Fitness Center" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/sauna.jpg" alt="Sauna" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/convenience-store.jpg" alt="Convenience Store" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/outdoor-bar.jpg" alt="Outdoor Bar" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/restaurant-1.jpg" alt="Restaurant" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/restaurant-2.jpg" alt="Restaurant" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/cafe.jpg" alt="Cafe" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/breakfast.jpg" alt="Breakfast" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/resort-interior.jpg" alt="Resort Interior" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/standard-bathroom-1.jpg" alt="Standard Bathroom" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/standard-bathroom-2.jpg" alt="Standard Bathroom" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4">
+              <img src="img/room-1.jpg" alt="Standard Room" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4 mb-lg-0">
+              <img src="img/room-2.jpg" alt="Deluxe Room" />
+            </div>
+            <div class="col-6 col-lg-4 mb-4 mb-lg-0">
+              <img src="img/room-3.jpg" alt="Standard Suite" />
+            </div>
+            <div class="col-6 col-lg-4 mb-0">
+              <img src="img/room-4.jpg" alt="Deluxe Suite" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="gallery-modal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="gallery-modal"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-lg"
+            role="document"
+          >
+            <div class="modal-content">
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-body">
+                <img src="img/biking.jpg" alt="Biking" />
+              </div>
+              <div class="modal-footer">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Main Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h3>About Us</h3>
+            <p>
+              The Shoto Resort is a beach resort that is located in Magnolia
+              City. Opened in 2014, our beach resort is the place for your next
+              vacation because of our great rooms, amenities, services, and
+              beautiful year-round weather for you and your family.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h3>Newsletter</h3>
+            <p>
+              Subscribe to receive news, updates, great deals, discounts, and
+              more.
+            </p>
+            <form action="#" method="POST" id="newsletter-form">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="newsletter-email"
+                  name="newsletterEmail"
+                  placeholder="Enter Email"
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-secondary"
+                id="newsletter-btn"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="amenities.html">Amenities</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h3>Contact Info</h3>
+            <ul>
+              <li>The Shoto Resort</li>
+              <li>123 Akane Avenue</li>
+              <li>Magnolia, FT 000000</li>
+              <li>(123)-456-7890</li>
+              <li>info@theshotoresort.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12"><hr class="m-0" /></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 order-md-1">
+            <div class="social-media text-md-right">
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.twitter.com" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="copyright mb-0">&copy;2018 The Shoto Resort</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

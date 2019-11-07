@@ -5,6 +5,10 @@ label {
 textarea {
   height: 200px;
   resize: none;
+
+  &.form-control {
+    height: 200px;
+  }
 }
 
 select.form-control:not([size]):not([multiple]) {

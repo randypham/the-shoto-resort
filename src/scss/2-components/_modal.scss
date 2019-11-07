@@ -1,0 +1,30 @@
+.modal {
+  padding: 0 !important;
+  text-align: center;
+
+  .close {
+    color: $white;
+    font-size: 2.5rem;
+    line-height: 0.6;
+    opacity: 1;
+    text-shadow: none;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    transition: color 0.2s ease;
+    &:hover {
+      color: $primary-color;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.modal-dialog {
+  padding: 1rem;
+}
+
+.modal-footer {
+  justify-content: center;
+}
