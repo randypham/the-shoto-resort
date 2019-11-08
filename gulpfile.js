@@ -5,6 +5,7 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const sourceMaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
+const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
@@ -22,7 +23,7 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
-// Compile and compress JavaScript
+// Compile JavaScript files
 function scripts() {
   return gulp
     .src('./src/js/app.js')
@@ -30,6 +31,32 @@ function scripts() {
     .pipe(uglify())
     .pipe(gulp.dest('./build/js'))
     .pipe(browserSync.stream());
+}
+
+// Get vendor scripts
+function getVendorScripts() {
+  return gulp
+    .src([
+      'node_modules/bootstrap/dist/js/bootstrap.js',
+      'node_modules/jquery/dist/jquery.js',
+      'node_modules/popper.js/dist/umd/popper.js',
+      'node_modules/jquery-validation/dist/jquery.validate.js'
+    ])
+    .pipe(gulp.dest('src/js'));
+}
+
+// Concat and compress vendor scripts
+function vendorScripts() {
+  return gulp
+    .src([
+      './src/js/jquery.js',
+      './src/js/popper.js',
+      './src/js/bootstrap.js',
+      './src/js/jquery.validate.js'
+    ])
+    .pipe(concat('vendor.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/js'));
 }
 
 // Watch for HTML, SCSS, and JavaScript changes
@@ -68,6 +95,8 @@ const createBuild = gulp.series(cleanBuild, styles, scripts, images);
 
 exports.styles = styles;
 exports.scripts = scripts;
+exports.getVendorScripts = getVendorScripts;
+exports.vendorScripts = vendorScripts;
 exports.watch = watch;
 exports.images = images;
 exports.cleanBuild = cleanBuild;

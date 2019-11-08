@@ -1,18 +1,20 @@
-// 0 - Base
-@import '0-base/variables';
-@import '0-base/custom';
-@import '0-base/mixins';
-@import '0-base/base';
+// 0 - Vendor
 
-// 1 - Layout
-@import '1-layout/section';
-@import '1-layout/footer';
+// 1 - Base
+@import '1-base/variables';
+@import '1-base/custom';
+@import '1-base/mixins';
+@import '1-base/base';
 
-// 2 - Components
-@import '2-components/navbar';
-@import '2-components/jumbotron';
-@import '2-components/card';
-@import '2-components/buttons';
-@import '2-components/forms';
-@import '2-components/modal';
-@import '2-components/map';
+// 2 - Layout
+@import '2-layout/section';
+@import '2-layout/footer';
+
+// 3 - Components
+@import '3-components/navbar';
+@import '3-components/jumbotron';
+@import '3-components/card';
+@import '3-components/buttons';
+@import '3-components/forms';
+@import '3-components/modal';
+@import '3-components/map';
