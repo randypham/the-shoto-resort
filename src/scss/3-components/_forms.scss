@@ -18,6 +18,10 @@ select.form-control:not([size]):not([multiple]) {
 .form-control {
   font-size: 0.875rem;
   line-height: 1.5;
+
+  &::placeholder {
+    color: $text-color;
+  }
 }
 
 .error {
